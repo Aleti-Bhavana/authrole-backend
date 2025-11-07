@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    origin:"https://authrole-frontend-kfid.vercel.app/",
+    origin:"https://authrole-frontend-kfid.vercel.app",
     credentials: true,
   })
 );
