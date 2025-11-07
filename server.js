@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_ORIGIN || "http://localhost:3000",
+    origin:"http://localhost:3000",
     credentials: true,
   })
 );
@@ -21,7 +21,7 @@ app.use(express.json());
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/tasks", taskRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 
 const startServer = async () => {
